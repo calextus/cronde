@@ -1,11 +1,18 @@
 
+import { BrowserRouter,Route } from 'react-router-dom';
 import './App.css';
+import Header from "./components/Header";
+import Homepage from "./Pages/Hompage";
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+  <BrowserRouter>
+  <div>
+    <Header/>
+    <Route path='/' component={Homepage} />
+    <Route path='/coins/:id' component={Homepage} />
+  </div>
+  </BrowserRouter>
   );
 }
 
