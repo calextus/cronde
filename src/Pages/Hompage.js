@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
+import Banner from "../components/Banner/Banner";
+import CoinsTable from "../components/CoinsTable";
 
-const Hompage = () => {
+const Homepage = () => {
   return (
-    <div>Hompage </div>
-  )
+    <>
+      <Banner />
+      <CoinsTable />
+    </>
+  );
 };
 
-export default Hompage;
+export default Homepage;
